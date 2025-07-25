@@ -50,7 +50,7 @@ default_args = {
 }
 
 with DAG(
-    dag_id='btc_technical_indicators',
+    dag_id='btc_technical_indicators_v2',
     default_args=default_args,
     schedule_interval='*/5 * * * *',
     catchup=False
