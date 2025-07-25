@@ -37,7 +37,7 @@ def fetch_and_process_data():
     df = df.dropna()
 
     # Veritabanına yaz (NeonDB bağlantı bilgilerini ayarla!)
-    db_url = "postgresql+psycopg2://<username>:<password>@<host>:<port>/<dbname>"
+    db_url = "postgresql+psycopg2://neondb_owner:npg_IRiYav7TKA1Z@ep-divine-mouse-a29jty4e-pooler.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
     engine = create_engine(db_url)
 
     df.to_sql("btc_usdt_technical", engine, if_exists="append", index=False)
