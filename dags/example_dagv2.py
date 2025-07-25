@@ -39,7 +39,7 @@ def fetch_and_process_data():
     db_url = "postgresql+psycopg2://neondb_owner:npg_IRiYav7TKA1Z@ep-divine-mouse-a29jty4e-pooler.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
     engine = create_engine(db_url)
 
-    df.to_sql("btc_usdt_technical", engine, if_exists="append", index=False)
+    df.to_sql("btc_usdt_technical_v2", engine, if_exists="append", index=False)
 
 default_args = {
     'owner': 'airflow',
