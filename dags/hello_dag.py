@@ -8,7 +8,7 @@ def say_hello():
 with DAG(
     dag_id="hello_test_dag",
     start_date=datetime(2025, 7, 1),
-    schedule_interval="@hourly",
+    schedule="@hourly",
     catchup=False
 ) as dag:
     task = PythonOperator(
