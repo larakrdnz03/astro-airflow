@@ -15,3 +15,8 @@ with DAG(
         task_id="hello_task",
         python_callable=say_hello
     )
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f2cd145 (Add hello DAG)
